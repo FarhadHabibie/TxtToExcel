@@ -176,25 +176,7 @@ class FileUploaderApp:
             # Fixed-width parsing
             df['No.'] = df['col1'].str[:7]
             df['Trx_Code'] = df['col1'].str[7:16]
-            df['Tanggal_Trx'] = df['col1'].str[16:28]
-            df['Jam_Trx'] = df['col1'].str[28:37]
-            df['Ref_No'] = df['col1'].str[37:50]
-            df['Trace_No'] = df['col1'].str[50:59]
-            df['Terminal_ID'] = df['col1'].str[59:76]
-            df['Merchant_PAN'] = df['col1'].str[76:96]
-            df['Acquirer'] = df['col1'].str[96:108]
-            df['Issuer'] = df['col1'].str[108:120]
-            df['Customer_PAN'] = df['col1'].str[120:140]
-            df['Nominal'] = df['col1'].str[140:157]
-            df['Merchant_Category'] = df['col1'].str[157:175]
-            df['Merchant_Criteria'] = df['col1'].str[175:193]
-            df['Response_Code'] = df['col1'].str[193:207]
-            df['Merchant_Name'] = df['col1'].str[207:232]
-            df['Location'] = df['col1'].str[232:245]
-            df['Country'] = df['col1'].str[245:248]
-            df['Convenience_Fee'] = df['col1'].str[248:261]
-            df['Credit'] = df['col1'].str[261:263]
-            df['Interchange_Fee'] = df['col1'].str[263:]
+            #ETC....
 
             # Clean objects
             df = self._strip_objects(df)
@@ -225,30 +207,8 @@ class FileUploaderApp:
             df['No.'] = df['col1'].str[:7]
             df['Trx_Code'] = df['col1'].str[7:16]
             df['Tanggal_Trx'] = df['col1'].str[16:28]
-            df['Jam_Trx'] = df['col1'].str[28:37]
-            df['Ref_No'] = df['col1'].str[37:50]
-            df['Trace_No'] = df['col1'].str[50:59]
-            df['Terminal_ID'] = df['col1'].str[59:76]
-            df['Merchant_PAN'] = df['col1'].str[76:96]
-            df['Acquirer'] = df['col1'].str[96:108]
-            df['Issuer'] = df['col1'].str[108:120]
-            df['Customer_PAN'] = df['col1'].str[120:140]
-            df['Nominal'] = df['col1'].str[140:157]
-            df['Merchant_Category'] = df['col1'].str[157:175]
-            df['Merchant_Criteria'] = df['col1'].str[175:193]
-            df['Response_Code'] = df['col1'].str[193:207]
-            df['Merchant_Name'] = df['col1'].str[207:232]
-            df['Location'] = df['col1'].str[232:245]
-            df['Country'] = df['col1'].str[245:248]
-            df['Convenience_Fee'] = df['col1'].str[248:261]
-            df['Credit'] = df['col1'].str[261:263]
-            df['Interchange_Fee'] = df['col1'].str[263:279]
-            df['Dispute_Tran_Code'] = df['col1'].str[279:299]
-            df['Dispute_Amount'] = df['col1'].str[299:317]
-            df['Fee_Return'] = df['col1'].str[317:335]
-            df['Dispute_Net_Amount'] = df['col1'].str[335:355]
-            df['Registration_Number'] = df['col1'].str[355:374]
-
+            #etc....
+            
             # Clean objects
             df = self._strip_objects(df)
 
